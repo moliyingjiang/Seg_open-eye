@@ -13,6 +13,7 @@ from torchvision import transforms
 from dataloaders.utils import  *
 from torchvision.utils import make_grid, save_image
 
+
 def main():
 
     parser = argparse.ArgumentParser(description="PyTorch DeeplabV3Plus Training")
@@ -42,7 +43,7 @@ def main():
                         help='whether to use sync bn (default: auto)')
     parser.add_argument('--freeze-bn', type=bool, default=False,
                         help='whether to freeze bn parameters (default: False)')
-
+    
     args = parser.parse_args()
     args.cuda = not args.no_cuda and torch.cuda.is_available()
     if args.cuda:
