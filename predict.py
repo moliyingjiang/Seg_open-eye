@@ -92,9 +92,7 @@ def main():
         u_time = time.time()
         img_time = u_time-s_time
         print("image:{} time: {} ".format(name,img_time))
-        # save_image(grid_image, args.out_path)
-        # print("type(grid) is: ", type(grid_image))
-        # print("grid_image.shape is: ", grid_image.shape)
+
     print("image save in in_path.")
 if __name__ == "__main__":
    main()
