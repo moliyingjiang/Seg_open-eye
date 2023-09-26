@@ -17,10 +17,10 @@ def main():
     parser.add_argument('--in-path', type=str,  default='/home/lx/eye_deeplab_datasets/test_jpg_2',
                         help='image to test')
     # parser.add_argument('--out-path', type=str, required=True, help='mask image to save')
-    parser.add_argument('--backbone', type=str, default='resnet',
+    parser.add_argument('--backbone', type=str, default='mobilenet',
                         choices=['resnet', 'xception', 'drn', 'mobilenet'],
                         help='backbone name (default: resnet)')
-    parser.add_argument('--ckpt', type=str, default='pre_models/resnet/model_best.pth.tar',
+    parser.add_argument('--ckpt', type=str, default='pre_models/mobilenet/model_best.pth.tar',
                         help='saved model')
     parser.add_argument('--out-stride', type=int, default=16,
                         help='network output stride (default: 8)')
